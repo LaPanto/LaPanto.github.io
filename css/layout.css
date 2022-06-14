@@ -1,0 +1,126 @@
+/*posicionar y dimensionar-----solo layout*/
+/* Para medir los paddings y bordes con menos cuentas */
+* {
+    box-sizing: border-box;
+}
+body {
+    /*Posicion*/
+    display: flex;
+    flex-wrap: wrap;
+    /*Dimensiones*/
+    margin: 0;
+}
+/* Header/titulo */
+header {
+    /*Dimensiones*/
+    width:100%;
+    height:150px;
+   
+    /*posiciones al header*/
+    position: fixed;
+    top: 0px;
+    left:0px;
+    z-index:1;
+      }
+header h1 h2{
+  max-width: 20vw;
+}
+h1{
+  padding-left: 30px;
+  margin-bottom: 0px;
+}
+header h2{
+  margin-top: 0px;
+}
+  /* Nav */
+nav{
+    /*Dimensiones*/
+    width: 70vw;
+    height: 50px;
+    /*margin-bottom: 100px;*/
+    /*Posicion*/
+
+    position: fixed;
+    top: 100px;
+    left: 30vw;
+    z-index: 1;
+
+    display: flex;
+    justify-content: right;
+    padding-right: 15px;
+  }
+  nav li{
+    /*Posicion*/
+    display: inline-block;
+
+  }
+  nav a{
+    display: block;
+    padding: 8px 22px;
+    
+  }
+  .mostrable{
+    display: none;
+    position: absolute;
+    z-index:1;
+  }
+  .desplegable{
+    position:relative;
+  }
+  .desplegable:hover .mostrable{
+    display:block;
+  }
+  main{
+    margin-top: 150px;
+    width: 100vw;
+  }
+  /*-------contenedor de las fotos y el texto-----------*/
+  .contenedor{
+    /*dimensiones*/
+    width: 98vw;
+    height:800px;
+    /*posicion*/
+    position:relative;
+  }
+  .contenedor_fotos{
+    /*dimensiones*/
+    width:60%;
+    height:500px;
+    /*posicion*/
+    position:absolute;
+    top: 150px;
+    left: 30px;
+  }
+  img.grande{
+    width: 700px;
+    height:400px;
+    position:absolute;
+    top: 100px;
+  }
+  img.pequeña{
+    width: 500px;
+    height: 350px;
+    position:absolute;
+    top:0px;
+    left:480px;
+  }
+  .contenedor_texto{
+    /*dimensiones*/
+    width: 20%;
+    height: 400px;
+    /*posicion*/
+    position:absolute;
+    top:200px;
+    right:20px;
+  }
+
+  
+  #whatsapp{
+    /*dimensiones*/
+    width: 100px;
+    height:100px;
+    /*posicion*/
+    position:fixed;
+    bottom:0px;
+    right:0px;
+}

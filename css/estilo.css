@@ -1,0 +1,66 @@
+/*para dar colores al layout*/
+/*variables para colocar los colores con opcion a usar en
+otras web solo cambiando el color en root*/
+/*---------colores especificos de la web-----------------*/
+:root{
+    --primario:beige ; /*fondo del header*/
+    --secundario: rgba(167,21,78,255); /*color del nombre negocio*/
+    --terciario: white; /*color del fondo del body*/
+  }
+  /*----------fuentes del nombre del negocio-----------------*/
+  @font-face {
+    font-family:Jazz_Std_Regular ;
+    src: url("../recursos/fuentes/Jazz_Std_Regular.otf.otf");
+  }
+  @font-face {
+    font-family: bank-gothic-light;
+    src: url("../recursos/fuentes/bank-gothic-light-bt.ttf");
+  }
+  /*-----------------------------------------------------------*/
+
+header{
+    background-color:var(--primario);
+}
+nav{
+    background-color: var(--primario);
+}
+nav ul{
+    list-style-type: none;
+  }
+nav a{
+    text-decoration: none;
+    line-height:10px;
+    font-size: 20px;
+    color: var(--secundario);
+    }
+nav li a:hover{
+    color:deeppink;
+}
+.desplegable:hover .mostrable{
+    background-color: var(--primario);
+}
+.contenedor{
+    background-image:url("../recursos/fotos/fondo_1.jpg");
+}
+.contenedor_fotos{
+    
+    padding:2px;
+}
+.contenedor_texto{
+    background-color: beige;
+}
+#whatsapp{
+    background-color: red; /*debera ser transparente y
+    solo se verá el icono del whatsapp*/
+}
+h1{
+    font-family: Jazz_Std_Regular;
+    font-weight: lighter;
+    font-size:50px;
+    color:var(--secundario);
+}
+h2{
+    font-family: bank-gothic-light;
+    
+    /*falta subrayar*/
+}
